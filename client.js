@@ -70,7 +70,7 @@ setTick(() => {
             const normalizedData = {};
             let key = 0;
 
-            // we need to skip every other byte because RAGE is 64bit but the data is 32bit
+            // we need to skip every other datum because RAGE is 64bit but the data is 32bit
             // we need to read it as a value stored every 64bits that only takes up 32bits of space.
             for (let i = 0; i < data.length; i += 2) {
                 normalizedData[key++] = data[i];
